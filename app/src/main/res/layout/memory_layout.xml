@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    tools:context=".GameMemory.MemoryActivity"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:id="@+id/img_memory_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:padding="5dp"
+            android:onClick="backFromRegister2nd"
+            />
+
+        <GridView
+            android:layout_marginTop="70dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:numColumns="4"
+            android:id="@+id/GridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchMode="columnWidth">
+
+        </GridView>
+    </LinearLayout>
+
+</RelativeLayout>
